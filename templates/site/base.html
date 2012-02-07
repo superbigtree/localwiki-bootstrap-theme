@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
 
-  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
        Remove this if you use the .htaccess -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
@@ -22,6 +22,8 @@
   {% block media %}
   <link rel="stylesheet" href="{% static "theme/css/reset.css" %}">
   <link rel="stylesheet" href="{% static "theme/css/site.css" %}">
+  <link rel="stylesheet" href="{{ STATIC_URL }}theme/css/skeleton.css" %}">
+  <link rel="stylesheet" href="{{ STATIC_URL }}theme/css/layout.css" %}">
   {% endblock %}
   {% block head_extra %}{% endblock %}
 </head>
@@ -62,7 +64,7 @@
           {% block dialog %}{% endblock %}
         {% endblock %}
         </div>
-      
+
         {% block content_wrapper %}
         <div id="content_wrapper">
           <div id="content">
