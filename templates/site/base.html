@@ -33,7 +33,7 @@
   <div>
   {% block everything_wrapper %}
 
-    <div id="header">
+    <div id="header" class="container">
       <div id="login_info">{% include "site/login_info.html" %}</div>
       <div class="site_search">{% include "site/search_form.html" %}</div>
       <div id="site_title">{% include "site/site_title.html" %}</div>
@@ -48,9 +48,9 @@
     </div>
 
     {% block main_wrapper %}
-    <div id="main">
+    <div id="main" class="container">
       {% block main %}
-        <div id="main_header">
+        <div id="main_header" class="container">
         {% block main_header %}
           {% block messages %}
             {% if messages %}
@@ -66,7 +66,7 @@
         </div>
 
         {% block content_wrapper %}
-        <div id="content_wrapper">
+        <div id="content_wrapper" class="container">
           <div id="content">
           {% block content %}
             {% block content_header %}{% endblock %}
@@ -79,7 +79,7 @@
     {% endblock %}
     </div>
 
-    <div id="footer">
+    <div id="footer" class="container">
      <div id="powered_by">
        {% block powered_by %}
        <a href="http://localwiki.org/"><img src="{% static "theme/img/powered_by_localwiki.png" %}"/></a>
