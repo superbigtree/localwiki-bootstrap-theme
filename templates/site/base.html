@@ -34,11 +34,18 @@
   {% block everything_wrapper %}
 
     <div id="header" class="container">
-      <div id="login_info">{% include "site/login_info.html" %}</div>
-      <div class="site_search">{% include "site/search_form.html" %}</div>
-      <div id="site_title">{% include "site/site_title.html" %}</div>
-      {% include "site/nav.html" %}
-      <div id="header_bar">
+	    <div class="site-info row">
+				<div class="eight columns alpha">
+					<div id="site_title">{% include "site/site_title.html" %}</div>
+					{% include "site/nav.html" %}
+				</div>
+
+				<div class="eight columns omega">
+					<div id="login_info">{% include "site/login_info.html" %}</div>
+					<div class="site_search">{% include "site/search_form.html" %}</div>
+				</div>
+      </div>
+      <div id="header_bar" class="row">
           <div class="inner">
             <h1 id="object_title">{% block header_title %}{% endblock %}</h1>
             <div id="object_actions">{% block object_actions %}{% endblock %}</div>
@@ -80,16 +87,18 @@
     </div>
 
     <div id="footer" class="container">
-     <div id="powered_by">
-       {% block powered_by %}
-       <a href="http://localwiki.org/"><img src="{% static "theme/img/powered_by_localwiki.png" %}"/></a>
-       {% endblock %}
-     </div>
-     {% block footer %}
-     {% endblock %}
+      <div class="footer-inner">
+  			<div id="powered_by">
+		  		{% block powered_by %}
+				  <a href="http://localwiki.org/"><img src="{% static "theme/img/powered_by_localwiki.png" %}"/></a>
+				  {% endblock %}
+			  </div>
+			  {% block footer %}
+			  {% endblock %}
+			</div>
     </div>
 
-    <div id="attributions">
+    <div id="attributions" class="container">
      {% block attributions %}
         {{ GLOBAL_LICENSE_NOTE|safe }}
      {% endblock %}

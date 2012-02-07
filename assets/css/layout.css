@@ -23,17 +23,68 @@
 /* #Media Queries
 ================================================== */
 
+  #site_title {
+		border-bottom: none;
+	}
+
+
 	/* Smaller than standard 960 (devices and browsers) */
-	@media only screen and (max-width: 959px) {}
+	@media only screen and (max-width: 959px) {
+
+	  #site_title {
+			border-bottom: none;
+		}
+
+		#header .site_search input[type="text"], #header .site_search #id_q {
+			padding: 0;
+			height: 2em;
+			width: 100px;
+			font-size: 15px;
+			line-height: 30px;
+			padding-left: 30px;
+			margin-right: 0.5em;
+		}
+
+	}
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
 	@media only screen and (min-width: 768px) and (max-width: 959px) {}
 
 	/* All Mobile Sizes (devices and browser) */
-	@media only screen and (max-width: 767px) {}
+	@media only screen and (max-width: 767px) {
+
+		#site_title {
+			border-bottom: 1px solid #E8ECEF;
+		}
+
+		#login_info {
+			float: none;
+			text-align: center;
+		}
+
+		#site_title h1 {
+			text-align: center;
+		}
+
+}
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+		#header .site_search input[type="text"], #header .site_search #id_q {
+			width: 230px;
+		}
+
+  }
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media only screen and (max-width: 479px) {}
+	@media only screen and (max-width: 479px) {
+
+    #nav {
+    	margin-left: .5em;
+    }
+		#nav li a {
+			font-size: 65%;
+		}
+
+	}

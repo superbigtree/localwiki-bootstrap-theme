@@ -63,7 +63,7 @@ a:hover {
 table {
     margin-bottom: 1em;
 }
-p { 
+p {
     margin-bottom: 1em;
 }
 pre, code {
@@ -89,8 +89,8 @@ textarea, input, select {
 */
 
 #main {
-    margin-left: 5em;
-    margin-right: 8em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*
@@ -100,8 +100,7 @@ textarea, input, select {
 */
 
 #content {
-    margin-top: 1em;
-    margin-bottom: 1.4em;
+    margin: 1em 1.5em 1.4em 1.5em;
 }
 #content.has_map {
     min-height: 340px;
@@ -112,12 +111,12 @@ textarea, input, select {
     margin-right: 0;
 }
 .mapdata_detail #content {
-    margin-top: 0; 
+    margin-top: 0;
     margin-bottom: 0;
 }
 /* Page edit view - we don't want margins. */
 #main.page_form #content {
-    margin-top: 0.9em; 
+    margin-top: 0.9em;
 }
 
 /*
@@ -128,13 +127,13 @@ textarea, input, select {
 
 
 #header {
-    background: #E8ECEF url(../img/header-bg.png) top left repeat;
-    border: 1px solid #E8ECEF;
-    border-bottom: 1px solid #DAE1E5;
+
 }
 #header_bar {
-    margin-left: 1.5em;
-    padding-left: 3.5em;
+    background: #E8ECEF url(../img/header-bg.png) top left repeat;
+    border-bottom: 1px solid #DAE1E5;
+
+    padding-left: 1.5em;
     min-height: 4.2em;
 }
 #header_bar a, #header_bar a:link {
@@ -171,10 +170,14 @@ textarea, input, select {
     color: #747474;
 }
 
+.site-info {
+  background: none;
+}
+
 #site_title {
     background: #fafafa url(../img/body-bg.png) top left repeat;
     min-height: 3.95em;
-    padding-left: 1.5em;
+    padding-left: 1em;
     font-size: 130%;
     padding-top: 1em;
     margin: 0;
@@ -221,7 +224,7 @@ textarea, input, select {
     float: right;
     clear: right;
     text-align: right;
-    margin-right: 2em;
+    margin-right: 0;
     margin-top: 0.4em;
 }
 #login_info .welcome {
@@ -233,7 +236,7 @@ textarea, input, select {
     float: right;
     clear: right;
     margin-top: 0.6em;
-    margin-right: 2em;
+    margin-right: 0;
 }
 #header .site_search input {
     float: left;
@@ -325,13 +328,13 @@ textarea, input, select {
 
 /*
 ====================================
- Nav 
+ Nav
 ====================================
 */
 #nav {
     list-style-type: none;
     position: absolute;
-    margin-left: 2em;
+    margin-left: 1.4em;
     margin-top: -2em;
 }
 #nav a, #nav a:link {
@@ -372,10 +375,15 @@ textarea, input, select {
 
 #footer {
     background: #e1e1e1 url(../img/footer-bg.png) top left repeat;
-    padding: 1.5em;
     clear: both;
     min-height: 30px;
 }
+
+.footer-inner {
+		padding: 1.5em;
+}
+
+
 #footer p { margin: 0; padding: 0 }
 
 #powered_by {
@@ -853,7 +861,6 @@ div.templates li {
 */
 
 #attributions {
-    margin: 1.5em 1em 1.5em 1em;
     font-size: 80%;
     text-align: center;
 }
