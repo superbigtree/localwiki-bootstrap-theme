@@ -132,9 +132,10 @@ textarea, input, select {
 #header_bar {
     background: #E8ECEF url(../img/header-bg.png) top left repeat;
     border-bottom: 1px solid #DAE1E5;
-
-    padding-left: 1.5em;
+    width: 100%;
+    padding: .3em 1.5em;
     min-height: 4.2em;
+    margin-top: 10px;
 }
 #header_bar a, #header_bar a:link {
     color: #444;
