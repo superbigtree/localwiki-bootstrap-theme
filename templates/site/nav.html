@@ -1,9 +1,22 @@
-{% block nav %}
-<ul id="nav">
-    <li><a href="{% url pages:show slug='Front_Page' %}">Front Page</a></li>
-    <li><a href="{% url pages:show slug='People' %}">People</a></li>
-    <li><a href="{% url maps:global %}">Map</a></li>
-    <li><a href="{% url recentchanges %}">Recent Changes</a></li>
-    <li><a href="{% url pages:index %}">All Pages</a></li>
-</ul>
-{% endblock %}
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+    <a class="brand" href="{% url pages:show slug='Front_Page' %}">example.com</a>
+      <div class="nav-collapse">
+      {% block nav %}
+        <ul class="nav">
+            <li><a href="{% url pages:show slug='People' %}">People</a></li>
+            <li><a href="{% url maps:global %}">Map</a></li>
+            <li><a href="{% url recentchanges %}">Recent Changes</a></li>
+            <li><a href="{% url pages:index %}">All Pages</a></li>
+        </ul>
+      {% endblock %}
+      </div>
+    </div>
+  </div>
+</div>

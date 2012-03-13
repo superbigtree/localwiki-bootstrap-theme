@@ -20,16 +20,17 @@
   <meta name="robots" content="index,follow">
   {% endblock %}
 
-  <link href="//fonts.googleapis.com/css?family=Cabin:regular,regularitalic,bold" rel="stylesheet" type="text/css">
-  <link href="//fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
-
   {% block media %}
-  <link rel="stylesheet" href="{% static "theme/css/reset.css" %}">
-  <link rel="stylesheet" href="{% static "theme/css/site.css" %}">
-  <link rel="stylesheet" href="{{ STATIC_URL }}theme/css/skeleton.css" %}">
-  <link rel="stylesheet" href="{{ STATIC_URL }}theme/css/layout.css" %}">
+  <link rel="stylesheet" href="{{ STATIC_URL }}theme/fonts/sorts_mill_goudy/stylesheet.css">
+  <link rel="stylesheet" href="{{ STATIC_URL }}theme/fonts/museo_300/stylesheet.css">
+  <link rel="stylesheet" href="{{ STATIC_URL }}theme/fonts/museo_500/stylesheet.css">
+  <link rel="stylesheet" href="{{ STATIC_URL }}theme/fonts/museo_700/stylesheet.css">
+  <link rel="stylesheet" href="{{ STATIC_URL }}theme/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ STATIC_URL }}theme/css/bootstrap-responsive.min.css">
+  <link rel="stylesheet" href="{{ STATIC_URL }}theme/css/site.css">
   {% endblock %}
   {% block head_extra %}{% endblock %}
+  <script type="text/javascript" src="{{ STATIC_URL }}theme/js/bootstrap.min.js"></script>
 </head>
 
 {% block body %}
@@ -37,12 +38,10 @@
   <div>
   {% block everything_wrapper %}
 
-    <div id="header">
+    {% include "site/nav.html" %}
+
+    <div id="header" class="container">
 	    <div class="site-info container">
-				<div class="eight columns alpha">
-					<div id="site_title">{% include "site/site_title.html" %}</div>
-					{% include "site/nav.html" %}
-				</div>
 
 				<div class="eight columns omega">
 					<div id="login_info">{% include "site/login_info.html" %}</div>
