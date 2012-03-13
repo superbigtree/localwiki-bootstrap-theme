@@ -16,6 +16,13 @@
             <li><a href="{% url pages:index %}">All Pages</a></li>
         </ul>
       {% endblock %}
+      {% load url from future %}
+      <form id="nav-search" method="GET" action="{% url 'haystack_search' %}">
+        <input type="text" title="search" name="q" value="{% if query and form.q.value %}{{ form.q.value }}{% endif %}" id="id_q" />
+      </form>
+
+      {% include "site/login_info.html" %}
+
       </div>
     </div>
   </div>

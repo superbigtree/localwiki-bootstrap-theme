@@ -31,6 +31,14 @@
   {% endblock %}
   {% block head_extra %}{% endblock %}
   <script type="text/javascript" src="{{ STATIC_URL }}theme/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="{{ STATIC_URL }}theme/js/jquery.watermark.min.js"></script>
+
+  <script>
+  $(document).ready(function() {
+    $("form#nav-search input").watermark();
+  });
+  </script>
+
 </head>
 
 {% block body %}
@@ -41,14 +49,6 @@
     {% include "site/nav.html" %}
 
     <div id="header" class="container">
-	    <div class="site-info container">
-
-				<div class="eight columns omega">
-					<div id="login_info">{% include "site/login_info.html" %}</div>
-					<div class="site_search">{% include "site/search_form.html" %}</div>
-				</div>
-      </div>
-
 
       <div id="header_bar">
         <div class="container">
