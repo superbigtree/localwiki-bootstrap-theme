@@ -17,12 +17,12 @@ border: none;
 }
 
 .navbar ul {
-  padding-top: 7px;
+  padding-top: 6px;
 }
 
 form#nav-search {
   float: left;
-  padding-top: 13px;
+  padding-top: 12px;
   height: 17px;
 }
 
