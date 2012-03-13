@@ -1,16 +1,18 @@
 body {
   font-family: "Museo300";
-  padding-top: 60px;
-}
-
-body.page_editor {
-  padding-top: 15px;
 }
 
 .cke_skin_sapling .cke_toolbox {
 background: none;
 border: none;
 }
+
+div.navbar-inner {
+-webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+border-radius: 0px;
+}
+
 
 .navbar .brand {
   padding: 14px 20px 12px;
