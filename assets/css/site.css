@@ -3,21 +3,32 @@ body {
   padding-top: 60px;
 }
 
+body.page_editor {
+  padding-top: 15px;
+}
+
+.cke_skin_sapling .cke_toolbox {
+background: none;
+border: none;
+}
+
 .navbar .brand {
-  padding: 13px 20px 12px;
+  padding: 14px 20px 12px;
 }
 
 .navbar ul {
-  padding-top: 6px;
+  padding-top: 7px;
 }
 
 form#nav-search {
   float: left;
-  padding-top: 10px;
-  height: 20px;
+  padding-top: 13px;
+  height: 17px;
 }
 
 form#nav-search input {
+  line-height: 19px;
+  font-size: 13px;
   font-family: "Museo300";
   color: #ddd;
   border: none;
@@ -40,5 +51,6 @@ form#nav-search input {
   -moz-box-shadow:0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);
   box-shadow:0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);
   width: 120px;
+  margin-bottom: 0;
 }
 
