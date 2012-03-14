@@ -2,7 +2,7 @@
 <ul class="nav pull-right">
 {% if request.user.is_authenticated %}
     <li class="welcome">
-        Welcome, <a href="{{ request.user.get_absolute_url }}">{{ request.user }}!</a>
+        <a href="{{ request.user.get_absolute_url }}">Welcome, {{ request.user }}!</a>
     </li>
     <li class="log-out">
         <a href="{% url 'django.contrib.auth.views.logout' %}?next={{ request.path }}">log out</a>

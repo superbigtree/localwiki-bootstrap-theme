@@ -69,3 +69,37 @@ form#nav-search input {
   margin-bottom: 0;
 }
 
+
+/* headers */
+
+h1 {
+  float: left;
+}
+
+
+div#object_actions {
+  padding-top: 4px;
+  margin-left: 20px;
+  float: left;
+}
+
+
+/* recent changes */
+
+div#limit_to {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+span.recentchanges {
+  font-size: 110%;
+}
+
+span.recentchanges a {
+  padding: 3px 7px;
+}
+
+span.recentchanges a.current {
+  background-color: whiteSmoke;
+  color: #999;
+}

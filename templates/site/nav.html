@@ -6,7 +6,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </a>
-    <a class="brand" href="{% url pages:show slug='Front_Page' %}">example.com</a>
+    <a class="brand" href="{% url pages:show slug='Front_Page' %}">{{ current_site.name }}</a>
       <div class="nav-collapse">
       {% block nav %}
         <ul class="nav">
