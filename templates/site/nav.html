@@ -10,10 +10,10 @@
       <div class="nav-collapse">
       {% block nav %}
         <ul class="nav">
-            <li><a href="{% url pages:show slug='People' %}">People</a></li>
             <li><a href="{% url maps:global %}">Map</a></li>
             <li><a href="{% url recentchanges %}">Recent Changes</a></li>
             <li><a href="{% url pages:index %}">All Pages</a></li>
+            <li><a href="{% url pages:show slug='About Olywiki' %}">About</a></li>
         </ul>
       {% endblock %}
       {% load url from future %}

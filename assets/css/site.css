@@ -104,6 +104,10 @@ span.recentchanges a.current {
   color: #999;
 }
 
+span.facebook {
+  float: left;
+}
+
 span.facebook iframe { 
   height: 600px;
   border: none; 
@@ -152,8 +156,8 @@ table.welcome-box {
   -webkit-box-shadow: 1px 1px 1px 1px rgba(55, 55, 55, 0.3);
   -moz-box-shadow: 1px 1px 1px 1px rgba(55, 55, 55, 0.3);
   box-shadow: 1px 1px 1px 1px rgba(55, 55, 55, 0.3);
-z-index: 100;
-position: absolute;
+  z-index: 100;
+  position: absolute;
   margin: 50px;
 
 }
@@ -184,3 +188,4 @@ table.welcome-box {
 }
 
 }
+
