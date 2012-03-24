@@ -103,3 +103,84 @@ span.recentchanges a.current {
   background-color: whiteSmoke;
   color: #999;
 }
+
+span.facebook iframe { 
+  height: 600px;
+  border: none; 
+}
+
+span.front-image img {
+  width: 100%;
+  border: 1px solid #333;
+}
+
+table.meta-info {
+  width: 424px;
+  float: right;
+  clear: right;
+  margin-left: 25px;
+}
+
+
+table, td, th {
+    vertical-align: top;
+    border-top: 1px solid #bfbfbf;
+    border-left: 1px solid #bfbfbf;
+}
+td, th {
+    padding: 5px;
+    border-right: 1px solid #bfbfbf;
+    border-bottom: 1px solid #bfbfbf;
+}
+thead, tfoot { background: #f2f2f2; }
+
+/* We don't want margin inside <p> inside table cells.  The editor has a
+ * tendency to add <p> to table cells when editing, so in order to keep
+ * tables looking consistent we zero this out. */
+#content #page td p, .page_editor td p {
+    margin-bottom: 0;
+}
+/* Reset the <p> behavior inside the diff table's immediate <td>s */
+#content #page .htmldiff > td > p {
+    margin-bottom: 1em;
+}
+
+table.welcome-box {
+  padding: 10px;
+  display: block;
+  background-color: rgba(255, 255, 255, .5);
+  -webkit-box-shadow: 1px 1px 1px 1px rgba(55, 55, 55, 0.3);
+  -moz-box-shadow: 1px 1px 1px 1px rgba(55, 55, 55, 0.3);
+  box-shadow: 1px 1px 1px 1px rgba(55, 55, 55, 0.3);
+z-index: 100;
+position: absolute;
+  margin: 50px;
+
+}
+
+table.welcome-box td {
+  border: none;
+}
+
+
+@media (max-width: 767px) {
+table.welcome-box {
+  padding: 10px;
+  display: block;
+  background-color: rgba(255, 255, 255, .5);
+  -webkit-box-shadow: 1px 1px 1px 1px rgba(55, 55, 55, 0.3);
+  -moz-box-shadow: 1px 1px 1px 1px rgba(55, 55, 55, 0.3);
+  box-shadow: 1px 1px 1px 1px rgba(55, 55, 55, 0.3);
+  margin: 50px;
+  clear: both;
+  position: static;
+}
+}
+@media (max-width: 479px) {
+table.welcome-box {
+  display: block;
+  background-color: rgba(255, 255, 255, .5);
+  clear: both;
+}
+
+}
