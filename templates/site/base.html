@@ -35,7 +35,6 @@
 
   <script>
   $(document).ready(function() {
-    $("form#nav-search input").watermark();
   });
   </script>
 
@@ -98,7 +97,7 @@
     <div id="footer" class="container">
       <div class="container">
         <div class="footer-inner">
-					<div id="powered_by">
+					<div id="powered_by" class="pull-right">
 						{% block powered_by %}
 						<a href="http://localwiki.org/"><img src="{% static "theme/img/powered_by_localwiki.png" %}"/></a>
 						{% endblock %}

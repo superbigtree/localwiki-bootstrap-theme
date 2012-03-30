@@ -189,3 +189,79 @@ table.welcome-box {
 
 }
 
+.navbar-search {
+  padding-top: 3px;
+}
+
+.navbar-search .search-query {
+  padding-top: 6px;
+  padding-bottom: 3px;
+}
+
+div#footer {
+  padding-top: 30px;
+  margin-top: 50px;
+  border-top: 1px solid #e5e5e5;
+}
+
+div#footer p {
+  text-transform: uppercase;
+  color: #ccc;
+}
+
+div#attributions {
+  padding-top: 40px;
+}
+
+#object_tags {
+    display: block;
+    line-height: 1.3;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+#object_tags form {
+    display: inline;
+}
+#object_tags input[type="submit"] {
+    display: inline;
+}
+#object_tags li.tag {
+    -webkit-box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.05);
+    display: block;
+    float: left;
+}
+/* no box-shadow around the text input area */
+.tagedit-list li.tagedit-listelement-new {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+#object_tags .tag-list {
+    display: table-cell;
+}
+#object_tags .edit_tags {
+    display: block;
+    padding: 13px 10px 14px 8px;
+    font-weight: normal;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+#object_tags .edit_tags span {
+    background: url(../img/tag-icon-small.png) 0 0 no-repeat;
+    padding-left: 22px;
+}
+#object_tags .edit_tags_cancel {
+    display: inline-block;
+    vertical-align: top;
+    margin: 8px;
+}
+
+#object_tags span {
+  display: block;
+}
+
+#object_tags ul.tagedit-list span {
+  display: inline;
+}
