@@ -265,3 +265,22 @@ div#attributions {
 #object_tags ul.tagedit-list span {
   display: inline;
 }
+
+#map {
+background-color: #f7f7f7;
+padding: 10px 10px 4px 10px;
+border: 1px solid #DAE1E5;
+float: right;
+margin-top: -4.2em;
+margin-left: 1em;
+margin-bottom: 0.8em;
+width: 402px;
+}
+
+#map div.small.olMap {
+  border: 1px solid #aaa;
+}
+
+#map div.info {
+  margin-top: 5px;
+}
